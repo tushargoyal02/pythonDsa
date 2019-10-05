@@ -1,5 +1,3 @@
-# this is only for the test purpose
-
 class node:
     def __init__(self, data):
         self.data= data
@@ -30,3 +28,25 @@ class Linkedlist:
 
         #if data not found
         return False
+
+    
+    def printList(self):
+        temp = self.head
+        while(temp):
+            print(temp.data)
+            temp = temp.next
+
+if __name__=="__main__":
+
+    llist=Linkedlist()
+    llist.push(2)
+    llist.push(3)
+    llist.printList()
+
+    out=llist.search(3)
+    #print(out)
+    if out==True:
+        print("value found")
+
+    else:
+        print("Node with the given value not found")   
