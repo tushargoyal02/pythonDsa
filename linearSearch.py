@@ -16,9 +16,18 @@ x=10
 n = len(arr)
 
 result = func(arr, n,x)
+if(arr[mid] == x):
+            return mid
 
-if (result==-1):
-	print("value",x," not found in array")
+        #if not and value is greater than mid value ignore left part and increase its value 
+        elif arr[mid] < x:
+            l = mid+1
+
+
+        # if value less than mid value ignore right part and decrease right value by -1
+        else: 
+            r= mid-1
+       
 
 else:
 	print("value found here:",result)
