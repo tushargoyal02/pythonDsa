@@ -1,18 +1,25 @@
 #!/usr/bin/python3
+class doubleLinklist:
 
-def func(arr,n, x):
-	
-	for i in range(0,n):
-		if (arr[i] == x):
-			return i
-	return -1
+    def __init__(self):
+
+        self.head = None
+
+    
+
+    def push(self, new_data):
+
+        new_node = node(new_data)
+
+        new_node.next = self.head
+        new_node.prev = None
 
 
+        if self.head is not None:
 
-
-arr =[1,2,3,5,6]
-
-x=10
+            self.head.prev = new_node
+        
+        self.head = new_node
 n = len(arr)
 
 result = func(arr, n,x)
