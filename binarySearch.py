@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+#defining fuction 
 def binaryfunc(arr, l, r, x):
     while l<=r:
         
