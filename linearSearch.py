@@ -5,6 +5,12 @@ def func(arr,n, x):
 	for i in range(0,n):
 		if (arr[i] == x):
 			return i
+	if(arr[mid] == x):
+            return mid
+
+        #if not and value is greater than mid value ignore left part and increase its value 
+        elif arr[mid] < x:
+            l = mid+1
 	return -1
 
 
